@@ -1,5 +1,8 @@
+import CorporateFareTwoToneIcon from '@mui/icons-material/CorporateFareTwoTone';
+
 import { Label } from 'src/components/label';
 import { SvgColor } from 'src/components/svg-color';
+
 
 // ----------------------------------------------------------------------
 
@@ -32,6 +35,11 @@ export const navData = [
         +3
       </Label>
     ),
+  },
+  {
+    title: 'Organization',
+    path: '/organization',
+    icon: <CorporateFareTwoToneIcon />,
   },
   {
     title: 'Blog',
