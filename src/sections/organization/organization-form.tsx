@@ -3,19 +3,18 @@ import React, { useState, useCallback } from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import Typography from '@mui/material/Typography';
 
 // ----------------------------------------------------------------------
 
 export type OrganizationFormData = {
-  name: string;
-  organization_id: string;
+    name: string;
+    organization_id: string;
 };
 
 type OrganizationFormProps = {
-  onSubmit?: (data: OrganizationFormData) => void;
-  loading?: boolean;
-  initialData?: Partial<OrganizationFormData>;
+    onSubmit?: (data: OrganizationFormData) => void;
+    loading?: boolean;
+    initialData?: Partial<OrganizationFormData>;
 };
 
 export function OrganizationForm({ onSubmit, loading = false, initialData }: OrganizationFormProps) {
